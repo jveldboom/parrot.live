@@ -8,7 +8,7 @@ const frames = [];
 // Setup frames in memory
 fs.readdir('./frames').then(data => { 
   data.forEach(async frame => {
-    const f = await fs.readFile(`./frames/${frame}`);
+    const f = await fs.readFile(`./frames2/${frame}`);
     frames.push(f.toString());
   })
 });
